@@ -4,10 +4,26 @@ Ognen Madevski
 Домашна задача по Софтверско инженерство 2024/2025  
 Документација за чекори 1–8 и 25–26  
 
-Чекор 3: Креирав оддалечен репозиториум  
+Чекор 3: Креирав оддалечен репозиториум
 Чекор 4: Локално иницијализирав репозиториум
+  mkdir SI_2025_lab1_233190  
+  cd SI_2025_lab1_233190  
+  git init  
 Чекор 5: Поврзување со remote репозиториум
+  git remote add origin https://github.com/omadevski/SI_2025_lab1_233190.git
+Чекор 6: Додавање на README.md и initial commit
+  echo "# Ognen Madevski - 233190" > README.md  
+  git add README.md  
+  git commit -m "Initial commit" 
 Чекор 7: Додавање на дадениот Java фајл
+  git add SI2025Lab1Main.java  
+  git commit -m "Add starter code"  
 Чекор 8: Push на master гранката
+  git branch -M master  
+  git push -u origin master
 Чекор 25: Додавање git logs и документација
+  git log --oneline --graph --all > logs.txt  
+  git add logs.txt 233190.txt  
+  git commit -m "Final commit" 
 Чекор 26: Финален push
+  git push origin master
